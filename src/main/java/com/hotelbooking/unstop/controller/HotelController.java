@@ -1,7 +1,7 @@
-package com.hotelbooking.unstop.Controller;
+package com.hotelbooking.unstop.controller;
 
-import com.hotelbooking.unstop.Model.Room;
-import com.hotelbooking.unstop.Service.BookingService;
+import com.hotelbooking.unstop.model.Room;
+import com.hotelbooking.unstop.service.BookingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
