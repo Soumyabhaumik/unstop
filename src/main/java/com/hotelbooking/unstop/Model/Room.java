@@ -20,6 +20,5 @@ public class Room {
     private boolean Available = true;
     private int floorNumber;
 
-    public void getAvailable(boolean b) {
-    }
+
 }
