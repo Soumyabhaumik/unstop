@@ -3,6 +3,7 @@ package com.hotelbooking.unstop.service;
 import com.hotelbooking.unstop.model.Room;
 import com.hotelbooking.unstop.repository.RoomRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -11,8 +12,11 @@ import java.util.List;
 import java.util.Random;
 
 @Service
-@RequiredArgsConstructor
 public class BookingService {
+    @Autowired // Inject the repository in the constructor
+    public BookingService(RoomRepository roomRepository) {
+        this.roomRepository = roomRepository;
+    }
     private final RoomRepository roomRepository; // Ensure this is final
 
     @Transactional
