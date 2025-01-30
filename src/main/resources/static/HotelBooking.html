@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Reservation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Hotel Room Reservation System</h1>
+
+    <div class="controls">
+        <label for="numRooms">Number of Rooms to Book:</label>
+        <input type="number" id="numRooms" min="1" max="5">
+        <button onclick="bookRooms()">Book Rooms</button>
+        <button onclick="randomizeOccupancy()">Randomize Occupancy</button>
+        <button onclick="resetBooking()">Reset Booking</button>
+    </div>
+
+    <div class="hotel-layout" id="hotelLayout">
+        <!-- Rooms will be dynamically generated here -->
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
